@@ -7,43 +7,17 @@
 */
 // typy
 #define SOUBOR FILE
-#define plav float
-#define plov float
-#define plovoucí float
-#define vznášej float
-#define dvojnásobný double
-#define dvojnásobná double
-#define dvojnásobné double
-#define dvojitý double
-#define dvojitá double
-#define dvojité double
+#define necalacifra float
+#define dvojnacifra double
 #define cifra int
-#define cal int // INTeger -> CALa cifra
-#define znak char
-#define dlouhý long
-#define dlouhá long
-#define dlouhé long
-#define krátký short
-#define krátká short
-#define krátké short
-#define znaménkový signed
-#define znaménková signed
-#define znaménkové signed
-#define bezznaménkový unsigned
-#define bezznaménková unsigned
-#define bezznaménkové unsigned
-#define neznaménkový unsigned
-#define neznaménková unsigned
-#define neznaménkové unsigned
-#define prázdno void
-#define prázdný void
-#define prázdná void
-#define prázdné void
-#define nijaký void
-#define nijaká void
-#define nijaké void
+#define calacifra int // INTeger -> CALa cifra
+#define ľitera char
+#define veľkacifra long
+#define malacifra short
+#define sminusom signed
+#define bezminusu unsigned
 #define praznota void
-#define pravdivost bool
+#define jepravda bool
 
 // pokročilé celočíselné typy
 #define velikost_t size_t
@@ -105,74 +79,55 @@
 #define omezené restrict
 
 // logické konstrukce
-#define když if
-#define pokud if
-#define jestli if
-#define jestliže if
-#define jinak else
-#define dokud while
-#define zatímco while
-#define pro for
-#define dělej do
-#define udělej do
-#define proveď do
-#define přepínač switch
-#define případ case
-#define výchozí default
-#define rozbij break
-#define rozbít break
-#define přeruš break
-#define přerušit break
-#define pokračuj continue
+#define keby if
+#define inač else
+#define pokym while
+#define dokym for
+#define rob do{
+#define zrob do{
+#define vyber switch{
+#define možnosc case
+#define notatoto default
+#define užskonč break
+#define icdaľej continue
 
 // ostatní klíčová slova
-#define vrac return
+#define vracše return
 #define vracšezos return
-#define navrať return
-#define jdido goto
-#define velikost(x) sizeof(x)
+#define icdo goto
+#define veľkosc(x) sizeof(x)
 #define definujtyp typedef
 #define definicetypu typedef
-#define středník ;
-#define stop ;
-#define vole ;
+#define abasta ;
 
 #define perša main
 
 // operátory
 #define je ==
-#define rovný ==
-#define rovná ==
-#define rovné ==
-#define rovno ==
-#define rovnáse ==
-#define není !=
-#define nerovný !=
-#define nerovná !=
-#define nerovné !=
-#define nerovno !=
-#define nerovnáse !=
-#define je_menší <
-#define je_menší_nebo_rovno <=
-#define je_větší >
-#define je_větší_nebo_rovno >=
-#define nebo ||
+#define bul ==
+#define neni !=
+#define nebul !=
+#define je_meňši_než <
+#define bul_meňši_než <
+#define je_meňši_abo_isni_než <=
+#define bul_meňši_abo_isni_než <=
+#define je_vekši_než >
+#define bul_vekši_než >
+#define je_vekši_abo_isni_než >=
+#define bul_vekši_abo_isni_než >=
+#define abo ||
 #define a &&
-#define rovná_se =
+#define budze =
+#define ščitaj +
+#define pridaj ++
+#define odčitaj -
+#define uber --
+#define nasob *
 
 // experimentální triky
-#define začátek {
 #define začni {
-#define konec }
-#define skonči }
-#define chlupatá_závorka {
-#define chlupatá_zavírací_závorka }
-#define kulatý_začátek (
-#define začni_kulatě (
-#define kulatý_konec )
-#define skonči_kulatě )
-#define závorka (
-#define zavírací_závorka )
+#define skonč }
+#define kuknido(x) [x]
 
 #define major *
 #define podplukovník **
@@ -206,14 +161,11 @@
 #define stíchyb stderr
 
 // konstanty
-#define pravda 1
-#define vcajku 1
-#define blbě 0
-#define nepravda 0
-#define lež 0
-#define KŘ '\n'
-#define KS -1 //Konec Souboru
-#define NULA NULL
+#define tahej 1
+#define tane 0
+#define amen '\n'
+#define amencma -1
+#define žaden NULL
 
 // Knihovny
 
@@ -221,20 +173,20 @@
 #define čas(x) time(x)
 
 // <stdio.h> - <spnvv.h>
-#define smaž(x) remove(x)
-#define přejmenuj(x, y) rename(x, y)
-#define dočsoubor() tmpfile()
-#define dočjmén(x) tmpnam(x)
-#define szavři(x) fclose(x)
-#define sspláchni(x) fflush(x)
-#define sotevři(x, y) fopen(x, y)
-#define sznovuotevři(x, y, z) freopen(x, y, z)
-#define nastavmísto(x, y) setbuf(x, y)
-#define přenastavmísto(x, y, z, a) setvbuf(x, y, z, a)
+#define zžuchaj(x) remove(x)
+#define premenuj(x, y) rename(x, y)
+#define chviľasubor() tmpfile()
+#define chviľameno(x) tmpnam(x)
+#define szavri(x) fclose(x)
+#define ssplukaj(x) fflush(x)
+#define sodchiľ(x, y) fopen(x, y)
+#define szasodchiľ(x, y, z) freopen(x, y, z)
+#define šteľujplac(x, y) setbuf(x, y)
+#define našteľujplac(x, y, z, a) setvbuf(x, y, z, a)
 #define svycišnif(...) fprintf(__VA_ARGS__)
-#define sčtif(...) fscanf(__VA_ARGS__)
+#define sčitajf(...) fscanf(__VA_ARGS__)
 #define vycišnif(...) printf(__VA_ARGS__)
-#define čtif(...) scanf(__VA_ARGS__)
+#define čitajf(...) scanf(__VA_ARGS__)
 
 // <stdlib.h> - <spnkni.h>
 #define ppřiděl(x) malloc(x) // paměť přiděl
@@ -242,8 +194,7 @@
 #define znpřiděl(x, y) realloc(x, y) // znovu paměť přiděl
 #define osvoboď(x) free(x)
 
-#define řnač(x) atoi(x) // řetězec na číslo
-#define řdoč(x) atoi(x)
+#define zľiterdocifry(x) atoi(x) // řetězec na číslo
 #define řnap(x) atof(x) // řetězec na plav
 #define řdop(x) atof(x)
 #define řnad(x) atol(x) // řetězec na dlouhý
